@@ -22,20 +22,35 @@ Color.isColor = function(rgb){
 };
 
 Color.redIntensity = function(rgb){
-  rgb[0] = (rgb/255)*100;
+  let R = (rgb[0]/255*100);
+  R = Math.round(R);
+  return R;
 };
 
 //greenIntensity
 Color.greenIntensity = function(rgb){
-
+  let G = (rgb[1]/255*100);
+  G = Math.round(G);
+  return G;
 };
 
 //blueIntensity
 Color.blueIntensity = function(rgb){
-
+  let B = (rgb[2]/255*100);
+  B = Math.round(B);
+  return B;
 };
 
 //brightness
-
+Color.brightnessIntensity = function(rgb){
+  let bright = (Color.blueIntensity(rgb)+Color.greenIntensity(rgb)+Color.redIntensity(rgb))/3;
+  bright = Math.round(bright);
+  return bright;
+};
 
 //complement
+let comp = [];
+for(let c=0;c=2;c++){
+  c = comp[].push;
+}
+return comp;
