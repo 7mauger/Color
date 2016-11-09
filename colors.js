@@ -50,7 +50,7 @@ Color.brightnessIntensity = function(rgb){
 
 //complement
 let comp = [];
-for(let c=0;c=2;c++){
-  c = comp[].push;
+for(let c=0;c<3;c++){
+  comp.push();
 }
 return comp;
